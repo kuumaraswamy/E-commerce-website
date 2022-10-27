@@ -24,7 +24,7 @@ function App() {
     const newEmailId = localStorage.getItem('email')
     const getCart = async () => {
       try {
-        const response = await axios.get(`https://crudcrud.com/api/ee472779740546e3a5d89aac9e4e5676/cart${newEmailId}`);
+        const response = await axios.get(`https://crudcrud.com/api/29e37888a34a4deb82bcf99daaefa833/cart${newEmailId}`);
         console.log(response);
         console.log(response.data.length);
         setCartLength(response.data.length);
